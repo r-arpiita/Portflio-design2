@@ -68,7 +68,7 @@ nav {
   padding: 0.8em 1.2em;
   border: none;
   background-color: var(--color2);
-  color: var(--color1);
+  color: var(--background-color);
   font-size: 0.8rem;
   cursor: pointer;
   transition: all 0.2s linear;
