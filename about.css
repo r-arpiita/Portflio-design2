@@ -3,6 +3,9 @@
   --color1: #d8ddef;
   --color2: #1d3557;
   --color3: #457b9d;
+  --pastel_color1: #fcbad8;
+  --pastel_color2: #f3c66c;
+  --pastel_color3: #7cebcf ;
 }
 
 * {
@@ -19,6 +22,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  
 }
 
 nav {
@@ -28,8 +32,9 @@ nav {
 
 .navbar {
   /* background-color: blue; */
-  width: 70%;
+  width: 80%;
   max-width: 1250px;
+  
   margin: 0.8em 0;
   display: flex;
   justify-content: space-between;
@@ -48,8 +53,8 @@ nav {
 
 .nav_menu {
   /* background-color: red; */
-  width: 40%;
-  max-width: 600px;
+  width: 60%;
+ max-width: 550px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -101,8 +106,8 @@ main {
 }
 
 .main_box {
-  width: 70%;
-  /* height: 200vh; */
+  width: 80%;
+  max-width: 1250px;
   background-color: var(--color1);
   border-radius: 1em;
   display: flex;
@@ -111,7 +116,7 @@ main {
 
   .first_column {
     /* background-color: blue; */
-    width: 35%;
+    width: 40%;
     display: flex;
     flex-direction: column;
 
@@ -144,6 +149,7 @@ main {
     }
 
     .special {
+      width: 100%;
       display: flex;
       flex-direction: column;
       margin-top: 3em;
@@ -157,7 +163,7 @@ main {
         width: 70%;
 
         h3 {
-          background-color: #7cebb7;
+          background-color: var(--pastel_color3);
           padding: 0.5em 1em;
           color: var(--color2);
           border-top-left-radius: 0.4em;
@@ -365,7 +371,7 @@ main {
   }
 
   .second_column {
-    width: 35%;
+    width: 40%;
     /* background-color: red; */
     display: flex;
     flex-direction: column;
@@ -395,15 +401,15 @@ main {
         }
 
         .first_dot {
-          background-color: #fcbad8;
+          background-color: var(--pastel_color1);
         }
 
         .second_dot {
-          background-color: #f3c66c;
+          background-color: var(--pastel_color2);
         }
 
         .third_dot {
-          background-color: #7cebb7;
+          background-color: var(--pastel_color3);
         }
       }
 
@@ -442,7 +448,7 @@ main {
         width: 80%;
         justify-content: space-between;
         h3 {
-          background-color: #fcbad8;
+          background-color: var(--pastel_color1);
           padding: 0.5em 1em;
           color: var(--color2);
           border-top-left-radius: 0.4em;
@@ -586,7 +592,7 @@ main {
         width: 80%;
         justify-content: space-between;
         h3 {
-          background-color: #c970fd;
+          background-color: #9381FF;
           padding: 0.5em 1em;
           color: var(--color2);
           border-top-left-radius: 0.4em;
@@ -679,12 +685,107 @@ main {
 }
 
 footer{
+  width: 90%;
+  align-self: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin-bottom: 1em;
   span{
    
     font-size: 0.8rem;
     color: var(--color2);
   }
+  .footer_list{
+    display: none;
+
+    gap: 2rem;
+    padding-top: 2em;
+    padding-bottom: 1.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+   .footer_anchor {
+    text-decoration: none;
+    color: var(--color2);
+    font-size: 1rem;
+  }
+
+  .footer_anchor:hover {
+    color: var(--color3);
+  }
 }
+
+@media (max-width:850px){
+  .navbar{
+    width: 90% ;
+  }
+
+  .main_box{
+    width: 95%;
+    justify-content: space-around;
+    padding: 0em 1em;
+
+    .first_column{
+      width: 45%;
+      align-items: center;
+
+       .special{
+        .special_head_box{
+          width: 80%;
+        }
+
+        .special_text_box{
+          width: 100%;
+        }
+
+       }
+
+       .skills{
+
+        .skills_head{
+          width: 80%;
+        }
+        .skills_main{
+          width: 100%;
+        }
+       }
+
+      
+    }
+
+    .second_column{
+      width: 45%;
+      align-items: center;
+      .About, .facts, .contacts{
+        margin-left: 0;
+        width: 100%;
+
+
+      }
+
+      
+    }
+  }
+}
+
+@media (max-width:650px){
+   .nav_list{
+    display: none ;
+   }
+
+   .nav_menu{
+    justify-content: end;
+   }
+
+   .footer_list{
+    display: flex !important;
+    flex-direction: row !important;
+   }
+
+   .main_box{
+    padding: 0em;
+   }
+}
+
