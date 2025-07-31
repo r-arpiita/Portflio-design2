@@ -113,7 +113,7 @@ main{
 
      
      span{
-            background-color: #fcbad8;
+            background-color: #7cebcf;
             padding: 0.5em 1em;
              color: var(--color2);
           border-top-left-radius: 0.4em;
@@ -223,12 +223,12 @@ main{
                     }
                     h3{
                         color: var(--color2);
-                        font-size: 1em;
+                        font-size: 0.9em;
                         font-weight: 600;
                     }
 
                     h3:hover{
-                      color: var(--color3);
+                        color: var(--color3);
                     }
                 }
 
