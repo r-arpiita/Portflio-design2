@@ -63,6 +63,12 @@ nav {
   color: var(--color2);
 }
 
+.nav_contact{
+  a{
+    text-decoration: none;
+  }
+}
+
 .nav_button {
   border-radius: 1.2em;
   padding: 0.8em 1.2em;

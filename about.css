@@ -656,6 +656,10 @@ main {
           display: flex;
           flex-direction: column;
           justify-content: center;
+
+          a {
+            text-decoration: none;
+          }
           button {
             color: var(--color2);
             background-color: var(--color1);
